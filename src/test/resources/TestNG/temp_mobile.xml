@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Single">
+    <test name="iPhone">
+        <parameter name="browserName" value="iPhone"/>
+        <parameter name="device" value="IPhone 12"/>
+        <parameter name="os_version" value="14"/>
+        <classes>
+            <class name="InnerTestMobile"/>
+        </classes>
+    </test>
+    <test name="Android">
+        <parameter name="browserName" value="Android"/>
+        <parameter name="device" value="Samsung Galaxy S21"/>
+        <parameter name="os_version" value="11.0"/>
+        <classes>
+            <class name="InnerTestMobile"/>
+        </classes>
+    </test>
+</suite>
